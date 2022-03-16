@@ -17,6 +17,7 @@ namespace Weekend
             {
                 lista.Add(new fasz(mind1hogymitadokmegneki));
             }
+            Console.WriteLine($"3.feladat: Filmek száma állományban" +lista.Count + "db");
         }
     }
 }
