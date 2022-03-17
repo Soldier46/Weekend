@@ -43,6 +43,14 @@ namespace Weekend
             Console.WriteLine($"\tBevétel az első héten: {vmax.bevel} Ft");
             Console.WriteLine($"\tLátogatók száma: {vmax.latogato}$" );
 
+            bool van = lista.Any(x => x.eredetiCim
+                                        .ToLower()
+                                        .Split(' ')
+                                        .All(y => y.ToLower().First() == 'w') &&
+                                       x.magyarCim
+                                        .ToLower()
+                                        .Split(' ')
+                                        .All(y => y.ToLower().First() == 'w'));
         }
     }
 }
