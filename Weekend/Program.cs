@@ -28,7 +28,20 @@ namespace Weekend
                 }
             }
             Console.WriteLine("4.feladat UIP Duna film forgalmazo 1.hetes bevételének összege:" + összeg + "ft");
+            fasz vmax = lista[0];
 
+            foreach (var i in lista)
+            {
+                if (i.latogato > vmax.latogato)
+                {
+                    vmax = i;
+                }
+            }
+            Console.WriteLine($"\tEredeti cím: {vmax.eredetiCim} másodperc");
+            Console.WriteLine($"\tMagyar cím: {vmax.magyarCim}");
+            Console.WriteLine($"\tForgalmazó: {vmax.forgalmazo}");
+            Console.WriteLine($"\tBevétel az első héten: {vmax.bevel} Ft");
+            Console.WriteLine($"\tLátogatók száma: {vmax.latogato}$" );
 
         }
     }
