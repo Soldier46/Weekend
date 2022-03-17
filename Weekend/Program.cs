@@ -17,9 +17,9 @@ namespace Weekend
             {
                 lista.Add(new fasz(mind1hogymitadokmegneki));
             }
-            Console.WriteLine($"3.feladat: Filmek száma állományban" +lista.Count + "db");
+            Console.WriteLine($"3.feladat: Filmek száma állományban " + lista.Count + " db");
 
-            int összeg = 0;
+            long összeg = 0;
             foreach (var i in lista)
             {
                 if (i.forgalmazo =="UIP")
@@ -27,7 +27,7 @@ namespace Weekend
                     összeg += i.bevel;
                 }
             }
-            Console.WriteLine(összeg);
+            Console.WriteLine("4.feladat UIP Duna film forgalmazo 1.hetes bevételének összege:" + összeg + "ft");
 
 
         }
